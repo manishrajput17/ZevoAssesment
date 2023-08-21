@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_news">
+
+    <fragment
+        android:id="@+id/navigation_news"
+        android:name="com.manish.newsapp.ui.news.NewsFragment"
+        android:label="@string/news"
+        tools:layout="@layout/fragment_news">
+        <action
+            android:id="@+id/action_navigation_detail_to_articleWebViewFragment"
+            app:destination="@id/navigation_article_web_view" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_article_web_view"
+        android:name="com.manish.newsapp.ui.details.DetailsFragment"
+        android:label="Details"
+        tools:layout="@layout/fragment_details">
+        <argument
+            android:name="articleUrl"
+            app:argType="string" />
+    </fragment>
+
+</navigation>

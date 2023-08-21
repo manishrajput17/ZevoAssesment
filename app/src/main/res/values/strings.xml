@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Zevo NewsApp</string>
+    <string name="news">Zevo News</string>
+    <string name="news_image">News image</string>
+    <string name="news_title">Today top news</string>
+
+</resources>
